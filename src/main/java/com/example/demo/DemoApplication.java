@@ -15,7 +15,7 @@ public class DemoApplication {
 
 	@GetMapping("/orders")
 	public List<Order> getOrders(){
-		return Stream.of(new Order(101,"mobile"),new Order(101,"mobile"))
+		return Stream.of(new Order(101,"mobile"),new Order(102,"htc"))
 				.collect(Collectors.toList());
 	}
 
